@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>屏幕滚动事件</title>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+  <div style="width:600px;height:350px;margin:340px 0 30px 600px;text-align:center;">
+    <input type="text" placeholder="请输入正确的用户名"autofocus="autofocus"/><br>
+    <input type="password" placeholder="请输入正确的密码名"/><br>
+    <input type="text" placeholder="请输入正确的验证码"/>
+  </div>
+  <p>item</p>
+  <p>jdskfjakldsjfa;dsjf;kldsjf;adsjf</p>
+  <p>dsafa</p>
+  <p>sdafa</p>
+  <p>dafad</p>
+  <p>item</p>
+  <p>jdskfjakldsjfa;dsjf;kldsjf;adsjf</p>
+  <p>dsafa</p>
+  <p>sdafa</p>
+  <p>dafad</p>
+</body>
+</html>
+<script>
+  // 屏幕滚动事件
+$(function(){
+  $(window).bind("scroll",function(){
+    console.log(111);
+    $("input").blur();  //屏幕滚动时，让input框失去焦点
+  })
+})
+</script>
+<style>
+input{
+  width:180px;height:30px;
+  margin-bottom:10px;
+}
+</style>
