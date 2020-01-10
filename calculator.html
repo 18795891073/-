@@ -114,7 +114,6 @@ form {
 <body>
   <div class="center">
 		<h1>HTML CSS, JavaScript 计算器</h1>
-		<!-- <a href="https://github.com/guuibayer/simple-calculator" target="_blank"><i class="fa fa-github"></i></a> -->
 		<form name="calculator">
 			<input type="button" id="clear" class="btn other" value="C">
 			<input type="text" id="display">
@@ -147,6 +146,7 @@ document.getElementById("clear").addEventListener("click", function() {
 });
 /* recebe os valores */
 function get(value) {
+	console.log(value)
 	document.getElementById("display").value += value; 
 } 
 
